@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuantaMed - Quantum ML Drug Discovery Platform</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #030712;
+        }
+        .mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+    </style>
+</head>
+<body class="text-gray-100 selection:bg-cyan-500 selection:text-neutral-900 overflow-x-hidden">
+
+    <!-- Header / Navbar -->
+    <header class="border-b border-gray-800 bg-gray-950/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <i data-lucide="atom" class="w-8 h-8 text-cyan-400 animate-spin-slow"></i>
+                <span class="text-xl font-bold tracking-tight bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">QuantaMed</span>
+            </div>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-400">
+                <a href="#problem" class="hover:text-cyan-400 transition-colors">Problem</a>
+                <a href="#solution" class="hover:text-cyan-400 transition-colors">Solution</a>
+                <a href="#benefits" class="hover:text-cyan-400 transition-colors">Benefits</a>
+                <a href="#pricing" class="hover:text-cyan-400 transition-colors">Pricing</a>
+            </nav>
+            <div>
+                <a href="#cta" class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-neutral-900 bg-cyan-400 rounded-lg hover:bg-cyan-300 transition-all font-semibold shadow-lg shadow-cyan-500/20">Book a Demo</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-24 pb-20 md:pt-32 md:pb-28 overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(6,182,212,0.08),transparent_50%)]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 mb-6">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span> Quantum ML Simulation
+            </span>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white max-w-4xl mx-auto leading-tight">
+                Predict. <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Don't Guess.</span>
+            </h1>
+            <p class="mt-6 text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
+                Stop losing billions on failed drug trials. QuantaMed's quantum ML platform predicts how compounds behave in the human body — before you ever run a single trial.
+            </p>
+            <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#cta" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-medium text-neutral-900 bg-cyan-400 rounded-xl hover:bg-cyan-300 transition-all shadow-xl shadow-cyan-500/20 font-semibold group">
+                    Book a Free Demo
+                    <i data-lucide="arrow-right" class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section id="problem" class="py-20 border-t border-gray-900 bg-gray-950/40 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+                        94% of vaccine candidates fail. <br><span class="text-red-400">Yours doesn't have to.</span>
+                    </h2>
+                    <p class="mt-6 text-gray-400 leading-relaxed text-lg">
+                        Every year, pharmaceutical companies waste billions on compounds that fail in late-stage trials. The root cause? Scientists cannot reliably predict how compounds will behave in the human body until it's too late.
+                    </p>
+                </div>
+                <div class="bg-gray-900/50 border border-gray-800 rounded-2xl p-8 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10">
+                        <i data-lucide="trending-down" class="w-32 h-32 text-red-500"></i>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="flex items-center justify-between border-b border-gray-800 pb-4">
+                            <span class="text-sm font-medium text-gray-400">Traditional R&D Failure Rate</span>
+                            <span class="text-2xl font-bold text-red-400 mono">94%</span>
+                        </div>
+                        <div class="w-full bg-gray-800 h-3 rounded-full overflow-hidden">
+                            <div class="bg-gradient-to-r from-red-500 to-amber-500 h-full w-[94%] rounded-full"></div>
+                        </div>
+                        <p class="text-xs text-gray-500 italic">Source: Industry-wide clinical trial pipeline benchmark studies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution / Product Simulator Section -->
+    <section id="solution" class="py-20 border-t border-gray-900 bg-gray-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                    Meet QuantaMed — The Quantum ML Prediction Platform
+                </h2>
+                <p class="mt-4 text-gray-400">
+                    Transforming target discovery into a precise, deterministic software pipeline.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="bg-gray-900/30 border border-gray-800/80 rounded-xl p-6 hover:border-cyan-500/30 transition-colors">
+                    <div class="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center text-cyan-400 mb-4">
+                        <i data-lucide="upload-cloud" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white">1. Upload Compound Data</h3>
+                    <p class="mt-2 text-sm text-gray-400 leading-relaxed">
+                        Securely upload your molecular compound datasets, SMILES strings, or structural data directly into our encrypted node pipeline.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-gray-900/30 border border-gray-800/80 rounded-xl p-6 hover:border-cyan-500/30 transition-colors">
+                    <div class="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center text-purple-400 mb-4">
+                        <i data-lucide="cpu" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white">2. Quantum ML Simulations</h3>
+                    <p class="mt-2 text-sm text-gray-400 leading-relaxed">
+                        Run advanced quantum-mechanical state mapping and ML-powered cellular interaction simulations using sub-angstrom grid mapping models.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-gray-900/30 border border-gray-800/80 rounded-xl p-6 hover:border-cyan-500/30 transition-colors">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400 mb-4">
+                        <i data-lucide="file-bar-chart" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white">3. Risk & Viability Reports</h3>
+                    <p class="mt-2 text-sm text-gray-400 leading-relaxed">
+                        Instantly retrieve deep viability analysis, precise compound-binding affinities, and comprehensive predictive failure risk dashboards.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Dashboard Sandbox Module -->
+            <div class="mt-16 bg-gray-900/40 border border-gray-800 rounded-2xl p-6 md:p-8 max-w-4xl mx-auto shadow-2xl relative overflow-hidden">
+                <div class="flex items-center justify-between border-b border-gray-800 pb-4 mb-6">
+                    <div class="flex items-center gap-2">
+                        <span class="w-3 align-middle inline-block h-3 rounded-full bg-red-500/70"></span>
+                        <span class="w-3 align-middle inline-block h-3 rounded-full bg-amber-500/70"></span>
+                        <span class="w-3 align-middle inline-block h-3 rounded-full bg-emerald-500/70"></span>
+                        <span class="ml-2 text-xs font-mono text-gray-500">quantamed-simulation-env-v4.2</span>
+                    </div>
+                    <span class="text-xs bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded border border-emerald-500/20 font-mono">SimReady</span>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="space-y-4">
+                        <label class="block text-sm font-medium text-gray-400">Select Trial Compound Target</label>
+                        <select id="compoundSelect" class="w-full bg-gray-950 border border-gray-800 rounded-lg px-4 py-2.5 text-sm text-gray-200 focus:outline-none focus:border-cyan-500 transition-colors">
+                            <option value="qmed-772">QMED-772 (Antiviral Candidate)</option>
+                            <option value="qmed-091">QMED-091 (Oncology Binding Target)</option>
+                            <option value="qmed-415">QMED-415 (Neuro-peptide Blocker)</option>
+                        </select>
+                        <button onclick="runSimulation()" class="w-full inline-flex items-center justify-center px-4 py-2.5 text-sm font-medium text-neutral-900 bg-cyan-400 rounded-lg hover:bg-cyan-300 transition-all font-semibold cursor-pointer">
+                            <i data-lucide="play" class="w-4 h-4 mr-2"></i> Run Quantum Prediction
+                        </button>
+                    </div>
+
+                    <div class="bg-gray-950 border border-gray-800/80 rounded-xl p-5 flex flex-col justify-between min-h-[160px]">
+                        <div>
+                            <span class="text-xs text-gray-500 uppercase tracking-wider block font-semibold">Simulation Diagnostics</span>
+                            <div id="simStatus" class="mt-2 text-sm text-gray-400">Select a compound target above and execute the live benchmark pipeline.</div>
+                        </div>
+                        <div id="metricBox" class="mt-4 pt-3 border-t border-gray-900 hidden flex items-center justify-between">
+                            <span class="text-xs text-gray-400">Viability Index Score:</span>
+                            <span id="viabilityScore" class="text-lg font-bold mono">--</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="text-center mt-8 text-lg font-medium text-gray-300">
+                Make confident decisions in <span class="text-cyan-400 underline decoration-cyan-500/40 underline-offset-4">weeks, not years</span>.
+            </p>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 border-t border-gray-900 bg-gray-950/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Benefit 1 -->
+                <div class="bg-gradient-to-b from-gray-900/60 to-gray-950 border border-gray-800 rounded-xl p-6 text-center">
+                    <div class="text-3xl font-extrabold text-cyan-400 mono">90%+</div>
+                    <div class="mt-2 font-medium text-white text-sm">Simulation Accuracy</div>
+                    <p class="mt-2 text-xs text-gray-400 leading-relaxed">Validated models mirroring real biological clinical endpoints.</p>
+                </div>
+                <!-- Benefit 2 -->
+                <div class="bg-gradient-to-b from-gray-900/60 to-gray-950 border border-gray-800 rounded-xl p-6 text-center">
+                    <div class="text-3xl font-extrabold text-purple-400 mono">Weeks</div>
+                    <div class="mt-2 font-medium text-white text-sm">Instead of Years</div>
+                    <p class="mt-2 text-xs text-gray-400 leading-relaxed">Drastically shrink asset synthesis pipelines down to core weeks.</p>
+                </div>
+                <!-- Benefit 3 -->
+                <div class="bg-gradient-to-b from-gray-900/60 to-gray-950 border border-gray-800 rounded-xl p-6 text-center">
+                    <div class="text-3xl font-extrabold text-emerald-400 mono">Billions</div>
+                    <div class="mt-2 font-medium text-white text-sm">Saved in Wasted R&D</div>
+                    <p class="mt-2 text-xs text-gray-400 leading-relaxed">Filter out failing candidate molecules before synthesis allocation.</p>
+                </div>
+                <!-- Benefit 4 -->
+                <div class="bg-gradient-to-b from-gray-900/60 to-gray-950 border border-gray-800 rounded-xl p-6 text-center">
+                    <div class="text-3xl font-extrabold text-amber-400 mono">Accelerate</div>
+                    <div class="mt-2 font-medium text-white text-sm">Life-Saving Treatments</div>
+                    <p class="mt-2 text-xs text-gray-400 leading-relaxed">Deploy therapeutic discoveries directly to phase pipelines immediately.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 border-t border-gray-900 bg-gray-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Simple, transparent pricing</h2>
+                <p class="mt-2 text-gray-400 text-sm">Flexible pipeline tier configurations engineered for international multi-target pipelines.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Plan 1 -->
+                <div class="bg-gray-900/30 border border-gray-800 rounded-2xl p-8 flex flex-col justify-between hover:border-gray-700 transition-colors relative">
+                    <div>
+                        <h3 class="text-xl font-bold text-white">Enterprise Plan</h3>
+                        <p class="mt-2 text-sm text-gray-400">For global biotechnology frameworks and corporate target pipelines.</p>
+                        <div class="mt-6 flex items-baseline gap-1">
+                            <span class="text-4xl font-extrabold text-white mono">USD 50,000</span>
+                            <span class="text-gray-400 text-sm">/ year</span>
+                        </div>
+                        <ul class="mt-6 space-y-3 text-sm text-gray-400 border-t border-gray-800 pt-6">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-cyan-400"></i> Full Pipeline Acceleration Framework</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-cyan-400"></i> Unlimited Parallel Core Runs</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-cyan-400"></i> Dedicated Nodes & Tier SLA Support</li>
+                        </ul>
+                    </div>
+                    <div class="mt-8">
+                        <a href="#cta" class="w-full inline-flex items-center justify-center px-4 py-2.5 text-sm font-medium text-white bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors">Get Enterprise Access</a>
+                    </div>
+                </div>
+
+                <!-- Plan 2 -->
+                <div class="bg-gray-900/40 border border-cyan-500/30 rounded-2xl p-8 flex flex-col justify-between hover:border-cyan-500/40 transition-colors relative shadow-xl shadow-cyan-500/5">
+                    <div class="absolute top-0 right-6 transform -translate-y-1/2 bg-cyan-400 text-neutral-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Top Tier</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white">Government/Research Plan</h3>
+                        <p class="mt-2 text-sm text-gray-400">For federal health ecosystems, university labs, and institute grants.</p>
+                        <div class="mt-6 flex items-baseline gap-1">
+                            <span class="text-4xl font-extrabold text-white mono">USD 80,000</span>
+                            <span class="text-gray-400 text-sm">/ year</span>
+                        </div>
+                        <ul class="mt-6 space-y-3 text-sm text-gray-400 border-t border-gray-800 pt-6">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-cyan-400"></i> Multi-Tenant Global Secure Workspace</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-cyan-400"></i> Compliance Verified Cloud Audits</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-cyan-400"></i> Deep Clinical Variable Mapping Modifiers</li>
+                        </ul>
+                    </div>
+                    <div class="mt-8">
+                        <a href="#cta" class="w-full inline-flex items-center justify-center px-4 py-2.5 text-sm font-medium text-neutral-900 bg-cyan-400 rounded-lg hover:bg-cyan-300 transition-all font-semibold">Request Institutional Access</a>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center mt-6 text-sm text-gray-500">Free Demo available for qualified research facilities.</p>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="py-20 border-t border-gray-900 bg-gray-950/40 relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Ready to predict the future of drug discovery?</h2>
+            <p class="mt-4 text-gray-400 max-w-xl mx-auto text-sm sm:text-base">
+                Contact our pipeline structural consultants to deploy QuantaMed core simulations into your existing chemical workflows.
+            </p>
+            <div class="mt-8">
+                <a href="mailto:contact@quantamed.ai" class="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-neutral-900 bg-cyan-400 rounded-xl hover:bg-cyan-300 transition-all shadow-xl shadow-cyan-500/20 font-semibold">
+                    Book Your Free Demo Today
+                </a>
+            </div>
+            <div class="mt-12 flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-gray-500 border-t border-gray-900 pt-8">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="mail" class="w-4 h-4 text-cyan-400"></i>
+                    <a href="mailto:contact@quantamed.ai" class="hover:text-gray-300 transition-colors">contact@quantamed.ai</a>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i data-lucide="globe" class="w-4 h-4 text-cyan-400"></i>
+                    <a href="https://quantamed.ai" target="_blank" class="hover:text-gray-300 transition-colors">quantamed.ai</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-900 bg-gray-950 py-8 text-center text-xs text-gray-600">
+        &copy; 2026 QuantaMed Inc. All rights reserved. Precision Accelerated Engineering.
+    </footer>
+
+    <!-- Scripting for Demo Box -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        function runSimulation() {
+            const compound = document.getElementById('compoundSelect').value;
+            const statusText = document.getElementById('simStatus');
+            const metricBox = document.getElementById('metricBox');
+            const scoreSpan = document.getElementById('viabilityScore');
+            
+            statusText.innerHTML = '<span class="text-cyan-400 flex items-center gap-1.5"><i data-lucide="loader" class="w-4 h-4 animate-spin"></i> Initializing quantum state arrays...</span>';
+            lucide.createIcons();
+            metricBox.classList.add('hidden');
+
+            setTimeout(() => {
+                statusText.innerHTML = '<span class="text-purple-400 flex items-center gap-1.5"><i data-lucide="cpu" class="w-4 h-4 animate-pulse"></i> Running multi-layered neural matrix maps...</span>';
+                lucide.createIcons();
+            }, 1200);
+
+            setTimeout(() => {
+                let score = "";
+                let colorClass = "";
+                
+                if(compound === "qmed-772") {
+                    statusText.innerHTML = '<span class="text-emerald-400 font-medium">Simulation Complete. Target shows high cellular binding affinity with zero structural toxicity footprints.</span>';
+                    score = "94.2%";
+                    colorClass = "text-emerald-400";
+                } else if(compound === "qmed-091") {
+                    statusText.innerHTML = '<span class="text-amber-400 font-medium">Simulation Complete. Moderate efficacy detected; high metabolic degradation risk identified under phase conditions.</span>';
+                    score = "61.8%";
+                    colorClass = "text-amber-400";
+                } else {
+                    statusText.innerHTML = '<span class="text-red-400 font-medium">Simulation Aborted. Severe compound breakdown matrix risk detected during simulated hepatic clearance phase.</span>';
+                    score = "14.5%";
+                    colorClass = "text-red-400";
+                }
+                
+                scoreSpan.innerText = score;
+                scoreSpan.className = "text-lg font-bold mono " + colorClass;
+                metricBox.classList.remove('hidden');
+                lucide.createIcons();
+            }, 2600);
+        }
+    </script>
+</body>
+</html>
